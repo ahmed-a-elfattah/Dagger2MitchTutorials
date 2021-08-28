@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Dagger2Mitch</string>
     <string name="login">Login</string>
     <string name="user_id">User id</string>
 </resources>

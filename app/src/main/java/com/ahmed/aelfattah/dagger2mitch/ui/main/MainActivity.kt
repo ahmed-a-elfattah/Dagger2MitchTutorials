@@ -16,19 +16,10 @@ class MainActivity : DaggerAppCompatActivity() {
 
     lateinit var binding: ActivityMainBinding
 
-    @Inject
-    lateinit var someData:String
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding= ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        Log.d(TAG, "onCreate: $someData")
-
-        binding.navigateAuth.setOnClickListener {
-            val intent=Intent(applicationContext,AuthActivity::class.java)
-            startActivity(intent)
-        }
     }
 }
