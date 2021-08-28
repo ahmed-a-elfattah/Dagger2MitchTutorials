@@ -9,11 +9,13 @@ import com.bumptech.glide.RequestManager
 import com.bumptech.glide.request.RequestOptions
 import dagger.Module
 import dagger.Provides
+import javax.inject.Singleton
 
 @Module
 class AppModule {
     companion object{
 
+        @Singleton
         @Provides
         @JvmStatic
         fun provideRequestOptions():RequestOptions{
@@ -22,6 +24,7 @@ class AppModule {
                 .error(R.drawable.white_background)
         }
 
+        @Singleton
         @Provides
         @JvmStatic
         fun provideGlideInstance(application: BaseApplication,requestOptions: RequestOptions):RequestManager{
@@ -29,6 +32,7 @@ class AppModule {
                 .setDefaultRequestOptions(requestOptions)
         }
 
+        @Singleton
         @Provides
         @JvmStatic
         fun provideAppDrawable(application: BaseApplication):Drawable{
