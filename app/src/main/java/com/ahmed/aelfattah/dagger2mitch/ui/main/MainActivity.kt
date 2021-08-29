@@ -1,13 +1,8 @@
 package com.ahmed.aelfattah.dagger2mitch.ui.main
 
-import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import com.ahmed.aelfattah.dagger2mitch.R
 import com.ahmed.aelfattah.dagger2mitch.databinding.ActivityMainBinding
-import com.ahmed.aelfattah.dagger2mitch.ui.auth.AuthActivity
 import dagger.android.support.DaggerAppCompatActivity
-import javax.inject.Inject
 
 class MainActivity : DaggerAppCompatActivity() {
     companion object {
